@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+/* 1. Global Base Reset - FORCE BLACK BACKGROUND */
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  /* Force black background everywhere */
+  background-color: #000000 !important;
+  color: #ffffff;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  cursor: auto !important;
+  /* Prevent scrollbar-triggered gaps */
+  overflow-x: hidden;
+}
+
+/* 2. Fleet Section Specifics */
+#fleet-section {
+  scroll-margin-top: 80px;
+}
+
+/* 3. Safety Overrides */
+* {
+  cursor: auto !important;
+  /* Ensure no padding/margin gaps show background */
+  box-sizing: border-box;
+}
+
+/* Ensure interactive elements behave correctly */
+button,
+a,
+input,
+[role="button"] {
+  cursor: pointer !important;
+}
+
+/* 4. Scrollbar Suppression (All Browsers) */
+* {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+*::-webkit-scrollbar {
+  display: none !important;
+}
+
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #d60018;
+}
