@@ -83,7 +83,7 @@ export default function Contacts() {
                     </div>
 
                     <div className="mt-16 text-center">
-                        <button className="bg-red-600 px-12 py-4 text-blacks font-bold tracking-widest text-sm hover:bg-red-700 transition-colors">
+                        <button className="bg-red-600 px-12 py-4 text-black font-bold tracking-widest text-sm hover:bg-red-700 transition-colors">
                             SEND REQUEST
                         </button>
                     </div>
